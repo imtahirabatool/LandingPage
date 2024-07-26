@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <header className="bg-transparent fixed w-full top-0 left-0 shadow-lg z-50">
       <div className="container mx-auto px-2 py-3 flex justify-between items-center">
-        <div className="text-3xl text-yellow-50 justify-start font-bold hover:text-purple-400 transition duration-300">
+        <div className="text-3xl text-yellow-50 px-3 justify-start font-bold hover:text-purple-400 transition duration-300">
           SmartFlow
         </div>
         <button
@@ -30,7 +30,7 @@ const Header = () => {
           </svg>
         </button>
         <nav
-          className={`hidden lg:flex lg:items-center lg:space-x-6 ${
+          className={`hidden px-3 lg:flex lg:items-center lg:space-x-6 ${
             isMenuOpen ? "block" : ""
           }`}
         >
@@ -59,19 +59,22 @@ const Header = () => {
           <nav className="flex flex-col items-end space-y-2 px-4">
             <a
               href="#features"
-              className="text-gray-200 hover:text-purple-700 font-medium transition duration-300 text-lg"
+              onClick={() => setMenuOpen(false)}
+              className="sm:text-sm md:text-base lg:text-lg  text-gray-200  hover:text-purple-700 font-medium transition duration-300 text-lg"
             >
               Features
             </a>
             <a
               href="#pricing"
-              className="text-gray-200 hover:text-purple-700 font-medium transition duration-300 text-lg"
+              onClick={() => setMenuOpen(false)}
+              className="sm:text-sm md:text-base lg:text-lg  text-gray-200 hover:text-purple-700 font-medium transition duration-300 text-lg"
             >
               Pricing
             </a>
             <a
               href="#contact"
-              className="text-gray-200 hover:text-purple-700 font-medium transition duration-300 text-lg"
+              onClick={() => setMenuOpen(false)}
+              className="sm:text-sm md:text-base lg:text-lg  text-gray-200 hover:text-purple-700 font-medium transition duration-300 text-lg"
             >
               Contact
             </a>

@@ -19,7 +19,7 @@ const Hero = () => {
           'url("https://images.unsplash.com/photo-1662372551108-dbb3047369fd?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
       }}
     >
-      <div className="container px-4 py-6 sm:px-6 sm:py-8 md:px-8 md:py-10 lg:px-16 lg:py-20 bg-gray-800 bg-opacity-70 rounded-lg text-center transition-opacity duration-500 opacity-0 animate-fade-in">
+      <div className="container w-[90%] p-5  sm:px-6 sm:py-8 md:px-8 md:py-10 lg:px-16 lg:py-20 bg-gray-800 bg-opacity-60 rounded-lg text-center transition-opacity duration-500 opacity-0 animate-fade-in">
         <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-4 transform translate-y-10 opacity-0 animate-slide-up">
           Revolutionize Your Workflow with SmartFlow
         </h1>
