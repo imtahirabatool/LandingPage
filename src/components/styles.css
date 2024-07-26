@@ -1,8 +1,8 @@
 /* styles.css */
 @media (max-width: 768px) {
     .hero-background {
-      background-size: 120% auto; /* Adjust this value based on your needs */
-      background-position: center center; /* Adjust this value if needed */
+      background-size: 120% auto; 
+      background-position: center center;
     }
   }
   

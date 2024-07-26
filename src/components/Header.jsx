@@ -6,12 +6,12 @@ const Header = () => {
 
   return (
     <header className="bg-transparent fixed w-full top-0 left-0 shadow-lg z-50">
-      <div className="container mx-auto px-6 py-3 flex justify-between items-center">
+      <div className="container mx-auto px-2 py-3 flex justify-between items-center">
         <div className="text-3xl text-yellow-50 justify-start font-bold hover:text-purple-400 transition duration-300">
           SmartFlow
         </div>
         <button
-          className="text-gray-400 lg:hidden px-3 py-2 border rounded border-white hover:bg-gray-700 transition duration-300"
+          className="text-gray-300 lg:hidden px-3 py-2 border rounded border-white hover:bg-gray-600 transition duration-300 relative"
           onClick={() => setMenuOpen(!isMenuOpen)}
         >
           <svg
@@ -55,26 +55,28 @@ const Header = () => {
         </nav>
       </div>
       {isMenuOpen && (
-        <nav className="lg:hidden flex flex-col items-center space-y-4 bg-gray-800 text-white py-4 mt-2 rounded-lg shadow-lg">
-          <a
-            href="#features"
-            className="text-gray-400 hover:text-purple-700 font-medium transition duration-300 text-lg"
-          >
-            Features
-          </a>
-          <a
-            href="#pricing"
-            className="text-gray-400 hover:text-purple-700 font-medium transition duration-300 text-lg"
-          >
-            Pricing
-          </a>
-          <a
-            href="#contact"
-            className="text-gray-400 hover:text-purple-700 font-medium transition duration-300 text-lg"
-          >
-            Contact
-          </a>
-        </nav>
+        <div className="absolute right-0 top-full mt-2 w-35 bg-blue-800 bg-opacity-30 text-white py-2 rounded-lg shadow-lg">
+          <nav className="flex flex-col items-end space-y-2 px-4">
+            <a
+              href="#features"
+              className="text-gray-200 hover:text-purple-700 font-medium transition duration-300 text-lg"
+            >
+              Features
+            </a>
+            <a
+              href="#pricing"
+              className="text-gray-200 hover:text-purple-700 font-medium transition duration-300 text-lg"
+            >
+              Pricing
+            </a>
+            <a
+              href="#contact"
+              className="text-gray-200 hover:text-purple-700 font-medium transition duration-300 text-lg"
+            >
+              Contact
+            </a>
+          </nav>
+        </div>
       )}
     </header>
   );
